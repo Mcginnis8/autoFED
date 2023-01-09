@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import React from 'react';
-import Modal from '../Modal.js';
-import PredictHeader from '../predictHeader.js';
+import Modal from './Modal.js';
+import PredictHeader from './predictHeader.js';
 import { useState, useEffect, useRouter } from 'react';
-import { firestore } from '../firebase.js';
+import { firestore } from './firebase.js';
 import { doc, getDoc } from "firebase/firestore";
 
 
