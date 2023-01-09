@@ -7,7 +7,6 @@ import { useState, useEffect, useRouter } from 'react';
 import { firestore } from './firebase.js';
 import { doc, getDoc } from "firebase/firestore";
 
-
 export default function Home() {
   async function getDocumentDataI() {
     const docRef = doc(firestore, "Daily Interest Predict", "predictNums");
