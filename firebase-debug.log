@@ -1,0 +1,27 @@
+[debug] [2023-01-09T19:40:56.135Z] ----------------------------------------------------------------------
+[debug] [2023-01-09T19:40:56.137Z] Command:       /home/cmcginnis8/.nvm/versions/node/v19.4.0/bin/node /home/cmcginnis8/.nvm/versions/node/v19.4.0/bin/firebase deploy
+[debug] [2023-01-09T19:40:56.137Z] CLI Version:   11.20.0
+[debug] [2023-01-09T19:40:56.137Z] Platform:      linux
+[debug] [2023-01-09T19:40:56.137Z] Node Version:  v19.4.0
+[debug] [2023-01-09T19:40:56.137Z] Time:          Mon Jan 09 2023 14:40:56 GMT-0500 (Eastern Standard Time)
+[debug] [2023-01-09T19:40:56.138Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-09T19:40:56.212Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-09T19:40:56.212Z] > authorizing via signed-in user (camvols19@gmail.com)
+[debug] [2023-01-09T19:40:56.213Z] [iam] checking project automatedfed for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-09T19:40:56.215Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/automatedfed:testIamPermissions [none]
+[debug] [2023-01-09T19:40:56.215Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/automatedfed:testIamPermissions x-goog-quota-user=projects/automatedfed
+[debug] [2023-01-09T19:40:56.215Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/automatedfed:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-09T19:40:56.447Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/automatedfed:testIamPermissions 200
+[debug] [2023-01-09T19:40:56.447Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/automatedfed:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-09T19:40:56.448Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/automatedfed [none]
+[debug] [2023-01-09T19:40:56.773Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/automatedfed 200
+[debug] [2023-01-09T19:40:56.773Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/automatedfed {"projectId":"automatedfed","projectNumber":"570540351539","displayName":"AutomatedFed","name":"projects/automatedfed","resources":{"hostingSite":"automatedfed","realtimeDatabaseInstance":"automatedfed-default-rtdb","storageBucket":"automatedfed.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_dbcc13e2-2c48-4e17-88ae-cc5c16f4e0d4"}
+[debug] [2023-01-09T19:41:19.345Z] Error: Unable to find the next dep, try NPM installing?
+    at getConfig (/home/cmcginnis8/.nvm/versions/node/v19.4.0/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:272:19)
+    at build (/home/cmcginnis8/.nvm/versions/node/v19.4.0/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:55:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async prepareFrameworks (/home/cmcginnis8/.nvm/versions/node/v19.4.0/lib/node_modules/firebase-tools/lib/frameworks/index.js:246:93)
+    at async deploy (/home/cmcginnis8/.nvm/versions/node/v19.4.0/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
