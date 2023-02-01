@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import React from 'react';
 import Modal from '/modules/modal.js';
+import { Analytics } from '@vercel/analytics/react';
 import { useState, useEffect, useRouter } from 'react';
 import { firestore } from '/modules/firebase.js';
 import { doc, getDoc } from "firebase/firestore";
@@ -152,6 +153,7 @@ export default function Home() {
         </div>
         </div>
       </main>
+      <Analytics />
     </>
   )
 }
