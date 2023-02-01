@@ -88,11 +88,11 @@ export default function Home() {
             <dd className="model-stat-number">Stats</dd>	
 				<div>
 					<dt className="model-stat">R-Square</dt>
-					<dd className="model-stat-number">0.97</dd>
+					<dd className="model-stat-number">0.98</dd>
 				</div>
 				<div>
 					<dt className="model-stat">MSE</dt>
-					<dd className="model-stat-number">0.06</dd>
+					<dd className="model-stat-number">0.04</dd>
 				</div>
 			</dl>
             </Modal>
