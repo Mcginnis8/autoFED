@@ -2,7 +2,6 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import React from 'react';
 import Modal from '/modules/modal.js';
-import PredictHeader from '/modules/predictHeader.js';
 import { useState, useEffect, useRouter } from 'react';
 import { firestore } from '/modules/firebase.js';
 import { doc, getDoc } from "firebase/firestore";
@@ -51,7 +50,7 @@ export default function Home() {
             <h1>autoFED</h1>
           </div>
           <div className="Para1">
-            <PredictHeader></PredictHeader>
+          <h4>Interest Rate Prediction for {nextMonthName} {nextYear}</h4>
           </div>
           <div className="Para1half">
             <h1>{fStoreInterestRate}%</h1>
