@@ -50,7 +50,7 @@ export default function Home() {
             <h1>autoFED</h1>
           </div>
           <div className="Para1">
-          <h4>Interest Rate Prediction for {nextMonthName} {nextYear}</h4>
+          <h4>Interest Rate Prediction for Interest Rate Prediction for Next FED Announcement</h4>
           </div>
           <div className="Para1half">
             <h1>{fStoreInterestRate}%</h1>
